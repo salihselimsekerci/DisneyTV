@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/movie_navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/movieFragment"
+        android:name="com.salihselimsekerci.disneyfilmkotlin.ui.main.view.MovieFragment"
+        android:label="MovieFragment" >
+        <action
+            android:id="@+id/action_movieFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.salihselimsekerci.disneyfilmkotlin.ui.main.view.DetailFragment"
+        android:label="DetailFragment" >
+        <action
+            android:id="@+id/action_detailFragment_to_movieFragment"
+            app:destination="@id/movieFragment" />
+        <argument
+            android:name="movieUUID"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.salihselimsekerci.disneyfilmkotlin.ui.main.view.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_movieFragment"
+            app:destination="@id/movieFragment" />
+    </fragment>
+</navigation>

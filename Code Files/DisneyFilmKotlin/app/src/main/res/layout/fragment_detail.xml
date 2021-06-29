@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="selectedMovie"
+            type="com.salihselimsekerci.disneyfilmkotlin.data.model.Movie" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:background="@color/appBgColor"
+        tools:context=".ui.main.view.DetailFragment"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/movieDetailCardMarginTop"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/cardRadius"
+                app:cardElevation="@dimen/cardElevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        android:minHeight="@dimen/movieDetailImgMinHeight"
+                        android:id="@+id/detail_fragment_imgMovie"
+                        android:downloadImg="@{selectedMovie.moviePoster}"
+                        android:layout_height="match_parent"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:padding="@dimen/movieDetailBottomPadding"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/movie_item_bottom_bg"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            android:text="@{selectedMovie.movieName}"
+                            android:layout_marginRight="@dimen/movieDetailMargin"
+                            android:layout_toLeftOf="@+id/detail_fragment_txtMoviePlayTime"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/detail_fragment_txtMovieName"
+                            android:textColor="@color/movieNameColor"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textSize="17sp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/detail_fragment_txtMoviePlayTime"
+                            android:textColor="@color/moviePlayTimeColor"
+                            android:text="@{selectedMovie.moviePlayTime}"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/movieDetailMargin"
+                android:layout_marginLeft="@dimen/movieDetailMargin"
+                android:layout_marginBottom="@dimen/movieDetailMargin"
+                app:cardCornerRadius="@dimen/movieDetailInfoRadius"
+                app:contentPadding="@dimen/movieDetailInfoPadding"
+                app:cardElevation="@dimen/movieDetailInfoElevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="15sp"
+                        android:text="@{selectedMovie.movieDescription}"
+                        android:textStyle="bold"
+                        android:id="@+id/detail_fragment_txtMoveieDescription"
+                        android:textColor="@android:color/black"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

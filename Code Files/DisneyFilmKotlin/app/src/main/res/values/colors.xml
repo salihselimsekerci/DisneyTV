@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">@color/appBgColor</color>
+    <color name="purple_500">@color/appBgColor</color>
+    <color name="purple_700">@color/appBgColor</color>
+    <color name="teal_200">#03A9F4</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="bottomBgColor">#75000000</color>
+    <color name="movieNameColor">#03A9F4</color>
+    <color name="moviePlayTimeColor">#BDBDBD</color>
+    <color name="appBgColor">@android:color/white</color>
+</resources>

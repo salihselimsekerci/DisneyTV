@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Disney Film Kotlin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="ListTypes">
+        <item>İsime göre artan</item>
+        <item>İsime göre azalan</item>
+        <item>Id değerine göre artan</item>
+        <item>Id değerine göre azalan</item>
+    </string-array>
+
+    <string name="sqliteSuccess">Veriler sqlden alındı</string>
+    <string name="sqliteError">Veriler kayıtlı deil</string>
+    <string name="progressMsg">Lütfen bekleyiniz..</string>
+    
+    <string name="mainAlertNegative">Evet</string>
+    <string name="mainAlertPositive">Hayır</string>
+    <string name="mainAlertMessage">Uygulamadan çıkmak istediğinize emin misiniz?</string>
+
+    <string name="movieAlertToastMsg">Türünü Seçtiniz"</string>
+    <string name="movieAlertMessage">-- Liste --</string>
+    <string name="movieAlertNegative">İptal</string>
+</resources>

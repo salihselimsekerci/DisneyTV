@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="movieItemHeight">250dp</dimen>
+    <dimen name="cardRadius">15dp</dimen>
+    <dimen name="cardElevation">5dp</dimen>
+    <dimen name="bottomPadding">10dp</dimen>
+    <dimen name="moviePlayTopMargin">5dp</dimen>
+    <dimen name="movieFragmentMargin">7dp</dimen>
+    <dimen name="movieFragmentTopMargin">10dp</dimen>
+    <dimen name="movieDetailCardMarginTop">-15dp</dimen>
+    <dimen name="movieDetailImgMinHeight">450dp</dimen>
+    <dimen name="movieDetailBottomPadding">20dp</dimen>
+    <dimen name="movieDetailMargin">15dp</dimen>
+    <dimen name="movieDetailInfoPadding">15dp</dimen>
+    <dimen name="movieDetailInfoElevation">15dp</dimen>
+    <dimen name="movieDetailInfoRadius">0dp</dimen>
+</resources>
