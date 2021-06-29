@@ -4,7 +4,7 @@
 
 ### Android DisyneyTV using Data Binding, Room Database Navigation, Ktx, RxJava based on MVVM architecture.
 
-Screen To Gifs
+##### Screen To Gifs
 
 ![splash1](https://user-images.githubusercontent.com/53614606/123797076-7dd72580-d8ee-11eb-9239-1146fca8912d.gif)
 
